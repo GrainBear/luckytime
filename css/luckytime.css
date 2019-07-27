@@ -1,0 +1,319 @@
+
+.firefly_container{
+	position: absolute;
+	height: 100%;
+	width:100%;
+}
+
+.firefly {
+  width:4px;
+  height:4px;
+  position:absolute;
+  background-color: #ecc45e;
+  box-shadow:0px 0px 17px 2px wheat;
+  border-radius: 50%;
+}
+
+.main{
+	position:absolute;
+	left:0px;
+	top:0px;
+	width: 100%;
+	height: 100%;
+	background-position:center;
+	background-image:url('../img/background.jpg');
+	background-repeat:no-repeat;
+	background-size:cover;
+	overflow:hidden;
+}
+
+.dialog{
+	position: absolute;
+	left: 10%;
+	right: 10%;
+	top:10%;
+	bottom: 10%;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	transition: all .5s;
+	padding: 10px 10px;
+}
+
+.dialog.hide{
+	opacity:0;
+
+}
+
+.left-panel{
+	position:relative;
+	float:left;
+	width:65%;
+	height:100%;
+	border:1px #eee solid;
+	border-radius:5px;
+	background-color:rgba(255,255,255,0.1);
+}
+
+.right-panel{
+	position:relative;
+	float:right;
+	width:calc(35% - 10px);
+	height:100%;
+	border:1px #eee solid;
+	border-radius:5px;
+	background-color:rgba(255,255,255,0.1);
+}
+#gift-head{
+	position: relative;
+	height:50px;
+	width:100%;
+	line-height:40px;
+	color:white;
+	font-size:18px;
+	font-weight:bold;
+	padding:5px 15px;
+	border-bottom:1px #eee solid;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	background:linear-gradient(to right, rgba(0,0,0,0.7) , rgba(0,0,0,0));
+}
+#gift-count{
+	float:right;
+}
+#lucky-panel{
+	position: relative;
+	width:100%;
+	height:calc(100% - 140px);
+	background-color: rgba(0,0,0,0.7);
+}
+.gift-pic{
+	position: absolute;
+	width:100%;
+	height:100%;
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:contain;
+}
+
+.bg_cover{
+	background-size:cover;
+}
+
+#gift-name{
+	position: relative;
+	width:100%;
+	height:40px;
+	padding: 5px 10px;
+	line-height:30px;
+	color: #ffffff;
+	font-size: 18px;
+	font-weight: bold;
+	background:linear-gradient(to right, rgba(0,0,0,0.7) , rgba(0,0,0,0));
+}
+.button-container{
+	position: relative;
+	width:100%;
+	height:50px;
+	padding:10px 10px;
+	bottom:0%;
+	border-top:1px #eee solid;
+}
+.button{
+	position: relative;
+	float: right;
+	height: 30px;
+	width: 100px;
+	border-radius: 30px;
+	background-color: red;
+	color:white;
+	margin: 0px 0px 0px 20px;
+	text-align: center;
+	line-height: 30px;
+	font-weight: bold;
+}
+#ticker-tape{
+	position:absolute;
+	width:600px;
+	height:500px;
+	top:calc((100% - 500px) / 2);
+	left:calc((100% - 600px) / 2);
+	background-image:url('../img/ticker-tape.png');
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:contain;
+	transition:opacity 0.3s;
+	animation-duration: 0.6s;
+}
+
+#lucky-dog{
+	position:absolute;
+	width:300px;
+	height:300px;
+	top:calc((100% - 300px) / 2);
+	left:calc((100% - 300px) / 2);
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:cover;
+	border-radius:8px;
+	transition:opacity 0.3s;
+	box-shadow:0px 0px 8px white;
+}
+
+#lucky-dog-name{
+	position:absolute;
+	width:100%;
+	height:30px;
+	bottom:0px;
+	color:white;
+	text-align:center;
+	line-height:30px;
+	font-size:20px;
+	font-weight:bold;
+	border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+	background:linear-gradient(to top, black , rgba(0,0,0,0.1));
+}
+
+.lucky-head{
+	position:relative;
+	height:40px;
+	width:100%;
+	line-height:40px;
+	font-size:18px;
+	font-weight:bold;
+	text-align:center;
+	color:white;
+	border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+	background-color:rgba(0,0,0,0.5);
+}
+
+.lucky-list{
+	position:relative;
+	width:100%;
+	height:calc(100% - 50px);
+	padding:10px 10px;
+	overflow:auto;
+}
+
+.lucky-dog-list{
+	position:relative;
+	width:100%;
+	min-height:50px;
+	box-shadow:0px 0px 2px white;
+	border-radius:5px;
+	margin:0px auto 8px auto;
+	transition:all .3s;
+	background-color:rgba(255,255,255,0.2);
+	overflow:hidden;
+}
+
+.hide{
+	opacity:0;
+}
+
+.lucky-dog-icon{
+	position:relative;
+	float:left;
+	width:50px;
+	height:50px;
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:cover;
+	border-radius:5px;
+}
+
+.lucky-dog-list-name{
+	position:relative;
+	float:left;
+	height:50px;
+	width:100px;
+	line-height:50px;
+	color:white;
+	padding:0px 0px 0px 15px;
+	font-size:16px;
+	font-weight:bold;
+	overflow:hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.lucky-dog-giveUp{
+	position:absolute;
+	right:5px;
+	bottom:5px;
+}
+
+.cover{
+	position:relative;
+	width:100%;
+	height:100%;
+	background-color:rgba(0,0,0,0);
+	transition:all .3s;
+}
+
+.cover_active{
+	background-color:rgba(0,0,0,0.6);
+}
+.prize{
+	position:relative;
+	float:left;
+	background-repeat:no-repeat;
+	background-position:left;
+	margin-left:15px;
+	line-height:50px;
+	color:white;
+	width:150px;
+}
+.prize>span{
+	display:inline-block;
+	left:45px;
+}
+/*放弃*/
+.prize_-1{
+	background-image:url('../img/p-1.png');
+}
+.prize_0{
+	background-image:url('../img/p0.png');
+}
+.prize_1{
+	background-image:url('../img/p1.png');
+}
+.prize_2{
+	background-image:url('../img/p2.png');
+}
+.prize_3{
+	background-image:url('../img/p3.png');
+}
+.prize_4{
+	background-image:url('../img/p4.png');
+}
+
+.luckyer_icon{
+	position:relative;
+	float:left;
+	width:150px;
+	height:150px;
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:cover;
+	border-radius:5px;
+	margin:5px 5px;
+	box-shadow:0px 0px 3px black;
+}
+
+.lucker_icon_name{
+	position:absolute;
+	width:100%;
+	height:20px;
+	bottom:0px;
+	color:white;
+	text-align:center;
+	line-height:20px;
+	font-size:16px;
+	font-weight:bold;
+	border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+	background:linear-gradient(to top, black , rgba(0,0,0,0.1));
+}

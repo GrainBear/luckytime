@@ -1,0 +1,35 @@
+.g-contextmenu{
+	position:absolute;
+	min-width:110px;
+	min-height:30px;
+	background-color:#333;
+	color:white;
+	font-size:12px;
+	border-radius:3px;
+	padding:5px 3px 5px 3px;
+	box-shadow:rgba(153,204,102,0.4) 0 1px 8px;
+}
+.g-contextmenu ul{
+	margin:0px;
+	list-style:none;
+}
+
+.g-contextmenu ul li{
+	position:relative;
+	height:30px;
+	line-height:30px;
+	transition: all .3s;
+	cursor:pointer;
+}
+
+.g-contextmenu ul li:hover{
+	background-color:#99cc66
+}
+
+.g-items-icon{
+	display:block;
+	float:left;
+	text-align:center;
+	width:25px;
+	height:30px;
+}

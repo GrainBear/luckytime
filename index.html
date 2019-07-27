@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>幸运抽奖</title>
+    <link rel="stylesheet" href="./lib/layui/css/layui.css">
+    <link rel="stylesheet" href="./css/common.css">
+	<link rel="stylesheet" href="./css/animate.min.css">
+	<link rel="stylesheet" href="./css/contextmenu.css">
+	<link rel="stylesheet" href="./css/luckytime.css">
+</head>
+<body class="layui-layout-body">
+	<div class="main" id="lucky-time"><!--抽奖框-->
+		<div class="firefly_container"></div>
+		<div class="dialog" id="">
+			<div class="left-panel">
+				<div id="gift-head"><span id="gift-bumber">---</span><span id="gift-count">本轮剩余名额：--</span></div>
+				<div id="lucky-panel">
+					<div class="gift-pic blur bg_cover"></div>
+					<div class="gift-pic"><div id="cover" class="cover"></div></div>
+					<div id="ticker-tape" class="hide"></div>
+					<div id="lucky-dog" class="hide"><div id="lucky-dog-name"></div></div>
+				</div>
+				<div id="gift-name">奖品：---</div>
+				<div class="button-container">
+					<div class="button" id="reset">重　置</div>
+					<div class="button" id="view-lucky">查看结果</div>
+					<div class="button" id="start-stop">开始抽奖</div>
+				</div>
+			</div>
+			<div class="right-panel">
+				<div class="lucky-head">获奖名单</div>
+				<div class="lucky-list" id="lucky-list"></div>
+			</div>
+		</div>
+	</div>
+	<!--Jquery-->
+	<script type="text/javascript" src="./lib/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="./lib/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="./lib/layui/layui.all.js"></script>
+	<script type="text/javascript" src="./lib/TweenMax.min.js"></script>
+	<script type="text/javascript" src="./js/firefly.js"></script>
+	<script type="text/javascript" src="./js/common.js"></script>
+	<script type="text/javascript" src="./js/contextmenu.min.js"></script>
+    <script type="text/javascript" src="./js/luckytime.js"></script>
+	<script type="text/javascript" src="./js/index.js"></script>
+</body>
+</html>
