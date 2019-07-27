@@ -39,7 +39,7 @@ function LuckyTime(domid){
 	//初始化
 	var Init=function(){
 		EventBind();
-		PostTo("./php/LuckyTime.php",{
+		Post("./php/LuckyTime.php",{
 			Command:"GetInfo"
 		},
 		function(res){
@@ -261,7 +261,7 @@ function LuckyTime(domid){
 	//向后端更新信息
 	var PostCurrentInfo=function(){
 		var info = luckyDraw_List.concat(luckyDog_List).concat(giveUp_List);
-		PostTo("./php/LuckyTime.php",{
+		Post("./php/LuckyTime.php",{
 			Command:"SetInfo",
 			LuckyDog_Info:info
 		},function(res){
